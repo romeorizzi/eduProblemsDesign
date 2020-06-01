@@ -11,6 +11,6 @@ La Loamed e un'azienda che produce snack. La disponibilità di materie prime, al
 |    Qof   |  almeno il 30% di pistacchi<br>almeno il 20% di mandorle<br>almeno il 30% di nocciole  |           3.00          |
 
 __Richieste__:
-1. __\[3 pt\]__ Supponendo che tutto quanto prodotto venga venduto, formulare come PL il problema di massimizzare il profitto della Loamed, motivando le scelte compiute in una cella Markdown o Raw
+1. __\[3 pt\]__ Supponendo che tutto quanto prodotto venga venduto, formulare come problema di Programmazione Lineare la massimizzazione del profitto della Loamed, motivando le scelte compiute in una cella Markdown o Raw
 2. __\[5 pt\]__ Risolvere il problema sfruttando la libreria Pulp
 3. 3. __\[2 pt\]__ Indicare dove l’eventuale aggiunta di qualche vincolo di interezza possa lievemente aumentare la precisione del modello
