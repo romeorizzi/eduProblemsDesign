@@ -8,9 +8,9 @@ L'azienda Kuddly Pals S.p.A. produce due tipi di pupazzi: orsetti e gattini. La 
 | Gattino |      0.08      |        8       |
 
 Ogni giorno l'azienda può processare fino a 20 metri quadrati di materia prima e sono presenti 48 lavoratori per assemblare i pupazzi. Ogni orsetto è venduto a 7.90 euro, mentre ogni gattino a 5.90 euro.
-L'azienda vorrebbe massimizzare i propri profitti.
+L'azienda vuole massimizzare i propri profitti.
 
 __Richieste__:
-1. Formulare il problema come problema di Programmazione Lineare, motivando le scelte compiute in una cella Markdown o Raw (3 punti)
-2. Risolvere il problema sfruttando la libreria Pulp (5 punti)
-3. E se l'azienda iniziasse a produrre un terzo pupazzo, per esempio delle tartarughe, vendendole a 6.90 euro al pezzo? Ogni tartaruga richiederebbe 0.07 metri quadrati e 9 minuti di tempo. Quale sarebbe la soluzione ottima? (1 punto)
+1. __\[3 pt\]__ Formulare il problema come problema di Programmazione Lineare, motivando le scelte compiute in una cella Markdown o Raw
+2. __\[5 pt\]__ Risolvere il problema sfruttando la libreria Pulp
+3. __\[1 pt\]__ E se l'azienda iniziasse a produrre un terzo pupazzo, per esempio delle tartarughe, vendendole a 6.90 euro al pezzo? Ogni tartaruga richiederebbe 0.07 metri quadrati e 9 minuti di tempo. Quale sarebbe la soluzione ottima?

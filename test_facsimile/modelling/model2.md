@@ -7,9 +7,9 @@ Grafito, il nuovo direttore di un museo di quadri di alto valore, decide di inst
 Le telecamere richiedono una diffusione della luce incompatibile con le esigenze di conservazione del materiale esposto pertanto il direttore decide di installarle negli incroci tra i corridoi.
 
 __Richieste__:
-1. Formulare un modello di Programmazione Lineare Intera che aiuti Grafito a minimizzare il numero di telecamere installate, sapendo che ogni corridoio deve essere coperto da almeno una telecamera, motivando le scelte compiute in una cella Markdown/Raw (3 punti)
-2. Risolvere il problema sfruttando la libreria Pulp (5 punti)
-3. Le telecamere tuttavia non hanno tutte lo stesso prezzo. Nella tabella seguente sono indicati i singoli costi di attivazione per ognuna di esse.
+1. __\[3 pt\]__ Formulare un modello di Programmazione Lineare Intera che aiuti Grafito a minimizzare il numero di telecamere installate, sapendo che ogni corridoio deve essere coperto da almeno una telecamera, motivando le scelte compiute in una cella Markdown/Raw
+2. __\[5 pt\]__ Risolvere il problema sfruttando la libreria Pulp
+3. __\[3 pt\]__ Le telecamere tuttavia non hanno tutte lo stesso prezzo. Nella tabella seguente sono indicati i singoli costi di attivazione per ognuna di esse.
 
 | TELECAMERA | COSTO |
 |:----------:|:-----:|

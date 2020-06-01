@@ -21,4 +21,4 @@ a.out
 __pycache__/
 *.py[cod]
 *$py.class
-
+__.ipynb_checkpoints__/

@@ -1,6 +1,6 @@
 ## Modellizzazione ##
 
-Un'azienda produce fibra di vetro al metro cubo e vorrebbe pianificare la produzione per le prossime sei settimane. La capacità di produzione è limitata e questo limite varia in base alla settimana considerata. La domanda settimanale è già nota per l'intero periodo. Anche i costi di produzione e di magazzino variano in base
+Un'azienda produce fibra di vetro al metro cubo e vorrebbe pianificare la produzione per le prossime sei settimane. La capacità di produzione è limitata e questo limite varia in base alla settimana considerata. La domanda settimanale è già nota per l'intero periodo. Anche i costi di produzione e di magazzino variano in base
 alla settimana. Tutti i dati sono indicati nella seguente tabella:
 
 | Settimana | Capacità | Domanda | Costi Produzione | Costi Magazzino |
@@ -13,5 +13,5 @@ alla settimana. Tutti i dati sono indicati nella seguente tabella:
 |     6     |    100   |   110   |         6        |       0.40      |
 
 __Richieste__:
-1. Pianificare la produzione minimizzando i costi, formulando il problema come problema di Programmazione Lineare, motivando le scelte compiute in una cella Markdown o Raw (5 punti)
-2. Risolvere il problema sfruttando la libreria Pulp (5 punti)
+1. __\[5 pt\]__ Pianificare la produzione minimizzando i costi, formulando il problema come problema di Programmazione Lineare, motivando le scelte compiute in una cella Markdown o Raw
+2. __\[5 pt\]__ Risolvere il problema sfruttando la libreria Pulp
