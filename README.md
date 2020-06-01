@@ -14,4 +14,5 @@ Repository intermedio tra [eduexams](https://github.com/romeorizzi/eduexams/) e 
   Repository punto di incontro tra gli sviluppatori e gli studenti coinvolti nel beta-testing del sistema per i temi dell'esame di Ricerca Operativa dal 2020 in poi.
   Il repo contiene istruzioni a vario livello e anche temi d'esame facsimile.
 
+![](edu-repo.png?raw=true)
 
