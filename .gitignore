@@ -22,3 +22,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 __.ipynb_checkpoints__/
+
+#IDE file
+.idea
