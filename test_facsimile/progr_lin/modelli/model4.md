@@ -1,4 +1,4 @@
-## Modellizzazione ##
+## ESERCIZIO NUM? \[90 pts\]##
 
 L'azienda Kuddly Pals S.p.A. produce due tipi di pupazzi: orsetti e gattini. La quantità di materia prima e il tempo necessario per realizzare ogni singolo pupazzo sono dati nella tabella sottostante.
 
@@ -11,6 +11,6 @@ Ogni giorno l'azienda può processare fino a 20 metri quadrati di materia prima 
 L'azienda vuole massimizzare i propri profitti.
 
 __Richieste__:
-1. __\[3 pt\]__ Formulare il problema come problema di Programmazione Lineare, motivando le scelte compiute in una cella Markdown o Raw
-2. __\[5 pt\]__ Risolvere il problema sfruttando la libreria Pulp
-3. __\[1 pt\]__ E se l'azienda iniziasse a produrre un terzo pupazzo, per esempio delle tartarughe, vendendole a 6.90 euro al pezzo? Ogni tartaruga richiederebbe 0.07 metri quadrati e 9 minuti di tempo. Quale sarebbe la soluzione ottima?
+1. __\[30 pts\]__ Formulare il problema come problema di Programmazione Lineare, motivando le scelte compiute in una cella Markdown o Raw
+2. __\[50 pts\]__ Risolvere il problema sfruttando la libreria Pulp
+3. __\[10 pts\]__ E se l'azienda iniziasse a produrre un terzo pupazzo, per esempio delle tartarughe, vendendole a 6.90 euro al pezzo? Ogni tartaruga richiederebbe 0.07 metri quadrati e 9 minuti di tempo. Quale sarebbe la soluzione ottima?
