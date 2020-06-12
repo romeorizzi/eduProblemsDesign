@@ -1,7 +1,46 @@
-#!/usr/bin/python
+!/usr/bin/python
 
 import networkx as nx
 from networkx.algorithms import clique, bipartite
+
+#n_i tupla di coordinate
+def angle_left(n0,n1,n2):
+    return (n1[0]-n0[0])*(n2[1]-n0[1])-(n2[0]-n0[0])*(n1[1]-n0[1])
+
+def intersection(n1,n2,n3,n4):
+    d1=angle_left(n3,n4,n1)
+    d2=angle_left(n3,n4,n2)
+    d3=angle_left(n1,n2,n3)
+    d4=angle_left(n1,n2,n4)
+    if d1==0 and d2==0 and d3==0 and d4==0:
+        return(((n2[0]-n3[0])*(n1[0]-n3[0])<=0 and (n2[1]-n3[1])*(n1[1]-n3[1])<=0) or ((n2[0]-n4[0])*(n1[0]-n4[0])<=0 and (n2[1]-n4[1])*(n1[1]-n4[1])<=0) or ((n4[0]-n1[0])*(n3[0]-n1[0])<=0 and (n4[1]-n1[1])*(n3[1]-n1[1])<=0))
+    else:
+        return(((d1<=0 and d2>=0) or (d1>=0 and d2<=0)) and ((d3<=0 and d4>=0) or (d3>=0 and d4<=0)))
+
+def checkedges_print(coordinates):
+    k=0
+    for i in range(len(coordinates)):
+                edg=coordinates[i]
+                if len(edg)>3:
+                    for j in range(1,len(edg)-1):
+                        coordinates.append([edg[0],edg[j],edg[j+1]])
+                    
+    for i in range(len(coordinates)):
+        for j in range(i+1,len(coordinates)):
+            edg1=coordinates[i]
+            edg2=coordinates[j]
+            if len(edg1)==3 and len(edg2)==3:
+                if edg1[1]!=edg2[1] and edg1[1]!=edg2[-1] and edg1[-1]!=edg2[1] and edg1[-1]!=edg2[-1]:
+                    r=intersection(edg1[1],edg1[2],edg2[1],edg2[2])
+                    if r==True :
+                        k+=1
+                        display(Markdown("Attenzione gli archi "+ edg1[0][0]+edg1[0][1]+" e "+edg2[0][0]+edg2[0][1]+ " si incrociano"))
+            
+    if k==0 :
+        display(Markdown("Corretto"))
+
+
+
 
 def planar(input_struct):
 
@@ -14,19 +53,15 @@ def planar(input_struct):
     G.add_weighted_edges_from(input_struct.get("first_set_edges"))
     choice = input_struct.get("choice")
 
+    coordinates=input_struct.get("list_e_coordinates")
+
     # check if graph is planar
     is_planar, _ = nx.check_planarity(G)
 
     # user choice
     if choice:
         if is_planar == True:
-            # if choice is true and graph was planar
-            display(Markdown("Corretto !"))
-            #print("Corretto il grafo è planare, fornire un planar embedding")
-        else:
-            # if choice is true and graph was not planar
-            display(Markdown("Soluzione errata"))
-            #print("Soluzione errata")
+            checkedges_print(coordinates)
     else:
         if is_planar == False:
         # if choice is flase and graph was not planar
@@ -62,3 +97,4 @@ def planar(input_struct):
             # if choice is flase and graph was planar
             display(Markdown("Soluzione errata"))
             #print("Soluzione errata")
+
