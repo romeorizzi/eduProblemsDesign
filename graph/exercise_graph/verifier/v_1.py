@@ -1,4 +1,4 @@
-!/usr/bin/python
+#!/usr/bin/python
 
 import networkx as nx
 from networkx.algorithms import clique, bipartite
