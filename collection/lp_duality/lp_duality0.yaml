@@ -1,0 +1,31 @@
+---
+name: lp_duality
+title: Programmazione lineare - Dualità
+description1: Si consideri la soluzione $x_3 = x_6 = 0, x_1 = 6, x_2 = 5, x_4 = 10, x_5 = 14$ del seguente problema:<br>max $x_1 + 6x_2 + C_3x_3 + 11x_4 + 5x_5 + C_6x_6$<br>tale che:\<br>$x_1 + x_2 + x_3 \le 12$<br>$x_3 + x_4 + x_6 \le 10$<br>$x_5 + x_6 \le 14$<br>$x_1 + 2_x3 + x_5 + 2x_6 \le 20$<br>$x_2 + x_4 + x_6 \le 15$<br>$x_1, x_2, x_3, x_4, x_5, x_6 \ge 0$
+tasks:
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Verificare esplicitamente che la soluzione proposta sia ammissibile"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Scrivere il problema duale"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Impostare il sistema che esprima le condizioni agli scarti complementari"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Risolvere il sistema per trovare una soluzione duale complementare alla soluzione primale fornita"
+  }
+- {
+    tot_points: 20,
+    ver_points: 0,
+    description1: "Per quali valori dei parametri $C_3$ e $C_6$ la soluzione assegnata è ottima? Indicare con chiarezza tutte le verifiche che sei stato chiamato a compiere"
+  }
+...

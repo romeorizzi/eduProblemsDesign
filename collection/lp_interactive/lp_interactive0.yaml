@@ -1,0 +1,32 @@
+---
+name: lp_interactive
+title: Programmazione lineare - Metodo del Simplesso (versione interattiva)
+description1: Si consideri il seguente problema di Programmazione Lineare:<br>max $3x_1 + 2x_2 + 4x_3$<br>tale che:<br>$2x_1 + 7x_2 \le 12$<br>$x_1 + 7x_2 + 8x_3 \le 24$<br>$x_1 + 2x_2 + 12x_3 \le 17$<br>$x_1, x_2, x_3 \ge 0$
+
+tasks:
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Sfruttando la libreria del simplesso interattivo, creare il primo tableau"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Scrivere il vettore dei coefficienti di costo ridotto dopo la prima iterazione"
+  }
+- {
+    tot_points: 30,
+    ver_points: 0,
+    description1: "Risolvere il problema sfruttando la libreria del simplesso interattivo, indicando la soluzione primale estesa ottima e il valore della funzione obiettivo"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Indicare la soluzione duale estesa ottima e il valore della funzione obiettivo"
+  }
+- {
+    tot_points: 20,
+    ver_points: 0,
+    description1: "Alla luce della teoria, motivare le risposte date ai punti 2 e 3 e i valori delle soluzioni ottenute"
+  }
+...

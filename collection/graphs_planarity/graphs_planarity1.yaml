@@ -1,0 +1,12 @@
+---
+name: graphs_planarity
+title: Planarità di un grafo
+description1: Si consideri il grafo $G$ riportato in figura:<br><img src='img/grafo_plan.png' width=600>
+
+tasks:
+- {
+    tot_points: 20,
+    ver_points: 0,
+    description1: "Dire se il grafo sia planare oppure no, fornendo un certificato"
+  }
+...
