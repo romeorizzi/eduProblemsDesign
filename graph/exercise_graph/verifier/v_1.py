@@ -1,4 +1,4 @@
-!/usr/bin/python
+#!/usr/bin/python
 
 import networkx as nx
 from networkx.algorithms import clique, bipartite
@@ -19,23 +19,38 @@ def intersection(n1,n2,n3,n4):
 
 def checkedges_print(coordinates):
     k=0
+    c=[]
     for i in range(len(coordinates)):
-                edg=coordinates[i]
-                if len(edg)>3:
-                    for j in range(1,len(edg)-1):
-                        coordinates.append([edg[0],edg[j],edg[j+1]])
-                    
-    for i in range(len(coordinates)):
-        for j in range(i+1,len(coordinates)):
-            edg1=coordinates[i]
-            edg2=coordinates[j]
+        edg=coordinates[i]
+        if len(edg)==3:
+            c.append([edg[0],edg[1],edg[2]])
+        if len(edg)>4:
+            c.append([edg[0],edg[1],edg[2]])
+            for j in range(2,len(edg)-2):
+                c.append([edg[0],edg[j],edg[j+1],"intermedio"])
+            c.append([edg[0],edg[-2],edg[-1]])
+        if len(edg)==4:
+            c.append([edg[0],edg[1],edg[2]])
+            c.append([edg[0],edg[2],edg[2],"intermedio"])
+            c.append([edg[0],edg[-2],edg[-1]])
+
+    for i in range(len(c)):
+        for j in range(i+1,len(c)):
+            edg1=c[i]
+            edg2=c[j]
             if len(edg1)==3 and len(edg2)==3:
                 if edg1[1]!=edg2[1] and edg1[1]!=edg2[-1] and edg1[-1]!=edg2[1] and edg1[-1]!=edg2[-1]:
                     r=intersection(edg1[1],edg1[2],edg2[1],edg2[2])
                     if r==True :
                         k+=1
                         display(Markdown("Attenzione gli archi "+ edg1[0][0]+edg1[0][1]+" e "+edg2[0][0]+edg2[0][1]+ " si incrociano"))
-            
+            else:
+                if edg1[0]!=edg2[0]:
+                    r=intersection(edg1[1],edg1[2],edg2[1],edg2[2])
+                    if r==True :
+                        k+=1
+                        display(Markdown("Attenzione gli archi "+ edg1[0][0]+edg1[0][1]+" e "+edg2[0][0]+edg2[0][1]+ " si incrociano"))
+        
     if k==0 :
         display(Markdown("Corretto"))
 
@@ -97,4 +112,3 @@ def planar(input_struct):
             # if choice is flase and graph was planar
             display(Markdown("Soluzione errata"))
             #print("Soluzione errata")
-

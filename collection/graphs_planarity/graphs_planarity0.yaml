@@ -1,0 +1,21 @@
+---
+name: graphs_planarity
+title: Planarità di un grafo
+description1: Si consideri il grafo $G$ riportato in figura:<br><img src='img/grafo_plan1_no_pesi.png' width=800>
+tasks:
+- {
+    tot_points: 20,
+    ver_points: 0,
+    description1: "Rimuovere il minimo numero di archi in modo da ottenere un grafo planare $G'$"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Fornire un planar embedding di $G'$"
+  }
+- {
+    tot_points: 10,
+    ver_points: 0,
+    description1: "Fornire argomenti in supporto del fatto che il numero di archi che hai rimosso sia il più piccolo possibile"
+  }
+...

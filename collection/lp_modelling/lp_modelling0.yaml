@@ -1,0 +1,54 @@
+---
+name: lp_modelling
+title: Programmazione lineare - Modellizzazione
+description1: Grafito, il nuovo direttore di un museo di quadri di alto valore, decide di installare un sistema di telecamere di sorveglianza a circuito chiuso e si pone quindi il problema di determinare il numero minimo di apparecchi necessari. La pianta del museo è rappresentata nella figura sottostante.<br><img src='img/model2-map.png' width=400>
+description2: Le telecamere richiedono una diffusione della luce incompatibile con le esigenze di conservazione del materiale esposto pertanto il direttore decide di installarle negli incroci tra i corridoi.
+
+tasks:
+- {
+    tot_points: 30,
+    ver_points: 0,
+    description1: Formulare un modello di Programmazione Lineare Intera che aiuti Grafito a minimizzare il numero di telecamere installate, sapendo che ogni corridoio deve essere coperto da almeno una telecamera, motivando le scelte compiute"
+  }
+- {
+    tot_points: 50,
+    ver_points: 0,
+    description1: Risolvere il problema sfruttando la libreria Pulp"
+  }
+- {
+    tot_points: 30,
+    ver_points: 0,
+    description1: "Le telecamere tuttavia non hanno tutte lo stesso prezzo. Nella tabella seguente sono indicati i singoli costi di attivazione per ognuna di esse.<br>
+    <table>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\"><b>TELECAMERA</b></td>
+        <td style=\"text-align: center; vertical-align: middle;\"><b>COSTO</b></td>
+    </tr>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\">a</td>
+        <td style=\"text-align: center; vertical-align: middle;\">5</td>
+    </tr>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\">b</td>
+        <td style=\"text-align: center; vertical-align: middle;\">10</td>
+    </tr>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\">c</td>
+        <td style=\"text-align: center; vertical-align: middle;\">20</td>
+    </tr>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\">d</td>
+        <td style=\"text-align: center; vertical-align: middle;\">6</td>
+    </tr>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\">e</td>
+        <td style=\"text-align: center; vertical-align: middle;\">4</td>
+    </tr>
+    <tr>
+        <td style=\"text-align: center; vertical-align: middle;\">f</td>
+        <td style=\"text-align: center; vertical-align: middle;\">5</td>
+    </tr>
+</table>
+    Quali telecamere bisognerebbe attivare per garantire la copertura e minimizzare i costi totali?"
+  }
+...
